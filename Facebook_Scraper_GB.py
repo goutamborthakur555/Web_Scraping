@@ -35,7 +35,7 @@ for i in event_links:
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
     try:
-        en = soup.find('div', class_=['2ycp', '_5xhk']).text
+        en = soup.find(class_="_5gmx").text
         Event_Name.append(en)
     except:
         Event_Name.append("")
